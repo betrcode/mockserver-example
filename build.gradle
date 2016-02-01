@@ -1,0 +1,18 @@
+group 'se.bettercode.mockserver'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "se.bettercode.mockserver.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.16.6'
+    compile 'org.mock-server:mockserver-client-java:3.10.2'
+    compile 'org.springframework:spring-core:4.2.4.RELEASE'
+    compile 'org.apache.commons:commons-lang3:3.0'
+}
